@@ -1,0 +1,31 @@
+#layout-footer{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+    padding: 3px 0px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    
+    p{
+        padding: 2px 7px;
+    }
+    .footer-nav{
+         ul{
+            display: flex;
+            padding: 2px 5px;
+            li{
+                list-style: none;
+                margin-right: 10px;
+                
+            }
+        }   
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    
+}

@@ -1,0 +1,20 @@
+#layout-footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  padding: 3px 0px;
+  position: relative;
+  bottom: 0;
+  width: 100%; }
+  #layout-footer p {
+    padding: 2px 7px; }
+  #layout-footer .footer-nav ul {
+    display: flex;
+    padding: 2px 5px; }
+    #layout-footer .footer-nav ul li {
+      list-style: none;
+      margin-right: 10px; }
+  #layout-footer .footer-nav a {
+    text-decoration: none;
+    color: white; }

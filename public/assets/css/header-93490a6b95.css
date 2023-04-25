@@ -1,0 +1,32 @@
+#layout-header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2vw;
+  background: #2196f3;
+  box-shadow: 1px 1px 7px 1px lightgrey; }
+
+#layout-header .mini-logo {
+  margin: 5px 0px; }
+  #layout-header .mini-logo a {
+    font-size: 1.7rem;
+    font-weight: 700; }
+
+#layout-header #auth-links ul {
+  margin: 7% 0px;
+  display: flex; }
+  #layout-header #auth-links ul li {
+    list-style: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-right: 10px; }
+    #layout-header #auth-links ul li button {
+      border-radius: 15px;
+      border: none;
+      padding: 3px 7px;
+      box-shadow: 0.5px 0px 4px 1px lightgrey;
+      cursor: pointer; }
+
+#layout-header a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: 'Open Sans'; }

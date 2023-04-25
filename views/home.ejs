@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="<%= assetPath('css/home.css') %>">
+<link rel="stylesheet" href="<%= assetPath('css/chat_box.css') %>">
+
+<div id="home-container">
+<section id="feed-post">
+    <% if(locals.user){ %> 
+    <h3>Posts</h3>
+    <form action="/posts/create" method="POST" id="new-post-form">
+        <textarea name="content" cols="30" rows="5" placeholder="Enter your text here..." required></textarea><br>
+        <input type="submit" value="Post">
+    </form>
+    <%}%>
+    <div id="posts-list-container">
+        <ul>
+            <% for(post of posts){%>
+                <%- include('_post') -%>
+            <%}%>
+        </ul>
+    </div>
+    
+</section>
+
+
+<section id="user-friends">
+    <h4>Friends</h4>
+    <% for(user of all_users){%>
+    <p>
+        <a href="/users/profile/<%= user.id %>"><%= user.name %></a>
+    </p>
+    <%}%>
+</section>
+    <%- include('chat_box')-%>
+</div>
+<script src="<%= assetPath('js/home_comments.js') %>"></script> 
+<script src="<%= assetPath('js/home_posts.js') %>"></script>
+<script src="<%= assetPath('js/toggle_like.js') %>"></script>
+
+<script>
+        $('.toggle-like-button').each(function(){
+        let self = this;
+        let toggleLike = new ToggleLike(self);
+    })
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js"></script>
+<script src="<%= assetPath('js/chat_engine.js') %>"></script>
+<% if(locals.user){%>
+<script>
+    new ChatEngine('user_chatBox', '<%= locals.user.email %>');
+</script>
+<%}%>
+    
