@@ -32,6 +32,9 @@ console.log('server up and runnuing', chatServer);
 const path = require('path');
 console.log('Here is the env name----', env.name);
 
+app.use(session({
+    secret: 'Jack-daniels'
+}))
 app.use(sassMiddleware({
     src: path.join(__dirname, env.asset_path, 'scss'),
     dest: path.join(__dirname, env.asset_path, 'css'),
