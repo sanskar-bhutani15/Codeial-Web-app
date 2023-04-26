@@ -304,3 +304,6 @@
 [0mGET / [36m304[0m 121.301 ms - -[0m
 ::1 - - [25/Apr/2023:15:55:53 +0000] "GET / HTTP/1.1" 200 4028 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
 ::1 - - [25/Apr/2023:15:55:54 +0000] "GET /%PUBLIC_URL%/favicon.ico HTTP/1.1" 404 167 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
+::1 - - [26/Apr/2023:13:18:15 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
+::1 - - [26/Apr/2023:13:18:16 +0000] "GET /%PUBLIC_URL%/favicon.ico HTTP/1.1" 404 167 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
+::1 - - [26/Apr/2023:13:18:18 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
