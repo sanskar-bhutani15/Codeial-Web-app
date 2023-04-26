@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "My first Social media web app",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
