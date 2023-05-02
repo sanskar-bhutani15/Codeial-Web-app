@@ -50,16 +50,16 @@ class ChatEngine{
             if(data.user_email == self.userEmail){
                 messageType = 'self-Message'
             };
+            console.log('TYPE-----', messageType);
+            newMessage.append($('<span>', {
+                html: data.message 
+            }));
 
-            newMessage.append($('<span>'), {
-                'html': data.message 
-            });
-
-            newMessage.append($('<sub>'),{
-                'html': data.user_email
-            });
+            newMessage.append($('<sub>',{
+                html: data.user_email
+            }));
             newMessage.addClass(messageType);
-            $('chatlist').append(newMessage);
+            $('#chatlist').append(newMessage);
         });
     };
     

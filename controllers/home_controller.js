@@ -57,7 +57,8 @@ try{
          return res.render('home', {
                 title: "Home",
                 posts: posts,
-                all_users: users
+                all_users: users,
+                locals: res.locals
             });
 }catch(err){
     console.log('Error',err);
